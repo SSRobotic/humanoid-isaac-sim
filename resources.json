@@ -42,7 +42,15 @@
     "upstream": "https://github.com/isaac-sim/IsaacLab",
     "license": "BSD-3-Clause",
     "verifiedOn": "2026-10-10",
-    "key": "isaac-sim/IsaacLab"
+    "key": "isaac-sim/IsaacLab",
+    "localCopies": [
+      {
+        "repository": "humanoid-isaac-sim",
+        "url": "https://github.com/SSRobotic/humanoid-isaac-sim/tree/main/projects/IsaacLab",
+        "commit": "b0542fe2d45bf91c4e1d9ef6952b9c709c80b4e8",
+        "fileCount": 1993
+      }
+    ]
   },
   {
     "id": "Open-X-Humanoid-TienKung-Lab",
@@ -112,7 +120,15 @@
     "url": "https://github.com/isaac-sim/IsaacSim",
     "upstream": "https://github.com/isaac-sim/IsaacSim",
     "license": "See project notices",
-    "verifiedOn": "2026-10-10"
+    "verifiedOn": "2026-10-10",
+    "localCopies": [
+      {
+        "repository": "humanoid-isaac-sim",
+        "url": "https://github.com/SSRobotic/humanoid-isaac-sim/tree/main/projects/IsaacSim",
+        "commit": "2469084bc328710207c6bc4ede32209082a9286c",
+        "fileCount": 9529
+      }
+    ]
   },
   {
     "id": "isaac-sim-isaaclab-arena",

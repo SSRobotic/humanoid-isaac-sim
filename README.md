@@ -1,7 +1,7 @@
 <p align="center"><img src="assets/ssrobotics-logo.jpg" alt="SSRobotics — original logo by SSRobotic" width="240"></p>
 
 <h1 align="center">🟢 Isaac Sim & Isaac Lab</h1>
-<p align="center"><b>SSRobotics · Engineering Resource Directory</b></p>
+<p align="center"><b>SSRobotics · Source Code Collection</b></p>
 
 <p align="center">
   <a href="https://ssrobotic.github.io/humanoid-robot-hub/"><img src="https://img.shields.io/badge/Resources-8-f28c28?style=flat-square" alt="8 curated resources"></a>
@@ -16,7 +16,45 @@ Isaac Sim scenes, Isaac Lab training, ROS integration and policy evaluation reso
 
 ฉาก Isaac Sim, การฝึกบน Isaac Lab, เชื่อม ROS และการประเมิน Policy
 
-Curated by **SSRobotic — Robotics Engineer & Open-source Curator**. This repository collects original source links, explains their engineering role and provides a practical starting guide. Upstream implementations remain credited to their creators.
+Curated by **SSRobotic — Robotics Engineer & Open-source Curator**. This repository contains actual source files and models in `projects/`, alongside a resource catalog and engineering guide. The imported implementations are unchanged snapshots credited to their original creators.
+
+## 📦 Code & models in this repository
+
+**11,522 tracked upstream files** — เปิดโฟลเดอร์ด้านล่างเพื่อดูโค้ดจริง โมเดล และตัวอย่างต้นฉบับ
+
+| Project files | Files | Pinned source | License / notices |
+| --- | ---: | --- | --- |
+| [isaac-sim/IsaacLab](projects/IsaacLab) | 1,993 | [`b0542fe2d45b`](https://github.com/isaac-sim/IsaacLab/tree/b0542fe2d45bf91c4e1d9ef6952b9c709c80b4e8) | [LICENSE](projects/IsaacLab/LICENSE) · [LICENSE-mimic](projects/IsaacLab/LICENSE-mimic) |
+| [isaac-sim/IsaacSim](projects/IsaacSim) | 9,529 | [`2469084bc328`](https://github.com/isaac-sim/IsaacSim/tree/2469084bc328710207c6bc4ede32209082a9286c) | [LICENSE](projects/IsaacSim/LICENSE) · [THIRD_PARTY_NOTICE.md](projects/IsaacSim/THIRD_PARTY_NOTICE.md) |
+
+**Contents:** 10,375 files contain their complete tracked contents; 1,147 files are Git LFS pointers to large upstream assets. These pointers are listed in the source manifests. Their binary objects are not hosted in SSRobotics LFS storage. Fetch needed assets from the original pinned project checkout under its own licenses.
+
+[Source manifest](source-manifest.json) records commits, file counts, Git LFS pointers and external submodules. [Per-file manifests](source-manifests/) record original Git blob hashes. `projects/` keeps upstream code, README files, licenses and notices; SSRobotics supplies the organization and guides.
+
+```bash
+# Skip LFS smudging: large asset objects remain upstream
+git -c filter.lfs.smudge= -c filter.lfs.process= -c filter.lfs.required=false clone --depth 1 https://github.com/SSRobotic/humanoid-isaac-sim.git
+cd humanoid-isaac-sim
+```
+
+### ▶️ Inspect and launch a humanoid task
+
+[Isaac Lab humanoid environment](projects/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/manager_based/classic/humanoid/) · [Training entry point](projects/IsaacLab/scripts/reinforcement_learning/rsl_rl/train.py) · [SSRobotics launcher](examples/launch_humanoid.py)
+
+```bash
+# Source-path check; works without Isaac or a GPU
+python examples/launch_humanoid.py random --num-envs 16 --dry-run
+python -m unittest discover -s tests -v
+
+# After completing the pinned Isaac Lab installation instructions
+python examples/launch_humanoid.py random --num-envs 16
+python examples/launch_humanoid.py train --num-envs 128 --headless
+python examples/launch_humanoid.py play --checkpoint /path/to/model.pt
+```
+
+The retained Isaac Lab version is **2.3.2** (`main`, pinned above); its [compatibility table](projects/IsaacLab/README.md#isaac-sim-version-dependency) lists Isaac Sim 4.5 / 5.0 / 5.1. The separate Isaac Sim source snapshot is an upstream `develop` snapshot and is **not** a prebuilt compatible runtime for that Lab version. Follow [Isaac Lab installation](https://isaac-sim.github.io/IsaacLab/v2.3.2/source/setup/installation/index.html) and the pinned README when choosing the runtime.
+
+This collection includes open-source code, not the NVIDIA runtime, hosted USD assets or a trained policy. Those are acquired through the upstream installation and access procedures under their own terms. We checked the launcher’s source paths; GPU simulation and policy training have not been run in this workspace.
 
 ## 🚀 Start here
 
@@ -54,4 +92,4 @@ Start with the [task selection and engineering guide](GUIDE.md): simulator setup
 
 ⭐ [Star the Hub](https://github.com/SSRobotic/humanoid-robot-hub) · 👤 [Follow SSRobotic](https://github.com/SSRobotic) · 💡 [Suggest a resource](https://github.com/SSRobotic/humanoid-robot-hub/issues/new/choose)
 
-Suggestions and corrections follow the [Hub contribution guide](https://github.com/SSRobotic/humanoid-robot-hub/blob/main/CONTRIBUTING.md). Linked software, assets and documentation keep their original licenses. The original SSRobotics logo is supplied by its creator; the editorial MIT license covers our original descriptions and guides only.
+Suggestions and corrections follow the [Hub contribution guide](https://github.com/SSRobotic/humanoid-robot-hub/blob/main/CONTRIBUTING.md). Linked software, assets and documentation keep their original licenses. The original SSRobotics logo is supplied by its creator; the root MIT license covers our original descriptions, guides and SSRobotics example code only. Imported `projects/` files retain their own licenses.

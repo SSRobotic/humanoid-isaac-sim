@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: Copyright (c) 2026 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+id = "falling_cube"
+title = "Falling Cube"
+summary = "Author a cube, simulate it falling, and visualize the result."
+kind = "sequence"
+
+[[step]]
+example = "falling_cube.author_cube"
+level = "beginner"
+
+[[step]]
+example = "falling_cube.simulate_cube"
+level = "beginner"
+
+[[step]]
+example = "falling_cube.visualize_simulation"
+level = "beginner"
