@@ -1,0 +1,184 @@
+[
+  {
+    "id": "unitreerobotics-unitree_rl_gym",
+    "title": "Unitree RL Gym",
+    "categories": [
+      "learning",
+      "isaac"
+    ],
+    "tags": [
+      "Unitree",
+      "RL",
+      "Isaac Gym"
+    ],
+    "description": "Reinforcement learning training examples for Unitree locomotion. Use the documented simulator and task versions.",
+    "descriptionTh": "ตัวอย่างฝึก Reinforcement Learning สำหรับการเดินของ Unitree ใช้เวอร์ชัน Simulator และ Task ตามเอกสาร",
+    "source": "upstream",
+    "owner": "unitreerobotics",
+    "url": "https://github.com/unitreerobotics/unitree_rl_gym",
+    "upstream": "https://github.com/unitreerobotics/unitree_rl_gym",
+    "license": "BSD-3-Clause",
+    "verifiedOn": "2026-10-10",
+    "key": "unitreerobotics/unitree_rl_gym"
+  },
+  {
+    "id": "isaac-sim-IsaacLab",
+    "title": "Isaac Lab",
+    "categories": [
+      "simulation",
+      "learning",
+      "isaac"
+    ],
+    "tags": [
+      "RL",
+      "Simulation",
+      "Isaac Sim"
+    ],
+    "description": "Framework for robot learning built on Isaac Sim, with environments and training integrations.",
+    "descriptionTh": "เฟรมเวิร์ก Robot Learning บน Isaac Sim พร้อม Environment และส่วนเชื่อมต่อการฝึก",
+    "source": "upstream",
+    "owner": "isaac-sim",
+    "url": "https://github.com/isaac-sim/IsaacLab",
+    "upstream": "https://github.com/isaac-sim/IsaacLab",
+    "license": "BSD-3-Clause",
+    "verifiedOn": "2026-10-10",
+    "key": "isaac-sim/IsaacLab"
+  },
+  {
+    "id": "Open-X-Humanoid-TienKung-Lab",
+    "key": "Open-X-Humanoid/TienKung-Lab",
+    "title": "TienKung Lab",
+    "description": "Isaac Lab workflows for legged-robot learning, including TienKung.",
+    "descriptionTh": "เวิร์กโฟลว์ Isaac Lab สำหรับเรียนรู้การเคลื่อนไหวของหุ่นยนต์ รวมถึง TienKung",
+    "categories": [
+      "simulation",
+      "research",
+      "isaac"
+    ],
+    "tags": [
+      "TienKung",
+      "RL",
+      "Isaac Lab"
+    ],
+    "source": "upstream",
+    "owner": "Open-X-Humanoid",
+    "url": "https://github.com/Open-X-Humanoid/TienKung-Lab",
+    "upstream": "https://github.com/Open-X-Humanoid/TienKung-Lab",
+    "license": "NOASSERTION",
+    "verifiedOn": "2026-10-10"
+  },
+  {
+    "id": "Open-X-Humanoid-x-humanoid-vla-simulation-benchmark",
+    "key": "Open-X-Humanoid/x-humanoid-vla-simulation-benchmark",
+    "title": "X-Humanoid VLA Benchmark",
+    "description": "Isaac Sim resources for evaluating vision-language-action policies.",
+    "descriptionTh": "แหล่งข้อมูล Isaac Sim สำหรับประเมิน Policy แบบ VLA",
+    "categories": [
+      "simulation",
+      "vla",
+      "research",
+      "isaac"
+    ],
+    "tags": [
+      "VLA",
+      "Benchmark",
+      "Isaac Sim"
+    ],
+    "source": "upstream",
+    "owner": "Open-X-Humanoid",
+    "url": "https://github.com/Open-X-Humanoid/x-humanoid-vla-simulation-benchmark",
+    "upstream": "https://github.com/Open-X-Humanoid/x-humanoid-vla-simulation-benchmark",
+    "license": "See project notices",
+    "verifiedOn": "2026-10-10"
+  },
+  {
+    "id": "isaac-sim-isaacsim",
+    "key": "isaac-sim/IsaacSim",
+    "title": "Isaac Sim",
+    "description": "Robot simulation on NVIDIA Omniverse, with physics, sensor simulation and robot integration.",
+    "descriptionTh": "ระบบจำลองหุ่นยนต์บน NVIDIA Omniverse พร้อมฟิสิกส์ เซนเซอร์ และการเชื่อมระบบ",
+    "tags": [
+      "Isaac Sim",
+      "USD",
+      "RTX",
+      "Sensors"
+    ],
+    "categories": [
+      "isaac",
+      "simulation"
+    ],
+    "source": "upstream",
+    "owner": "isaac-sim",
+    "url": "https://github.com/isaac-sim/IsaacSim",
+    "upstream": "https://github.com/isaac-sim/IsaacSim",
+    "license": "See project notices",
+    "verifiedOn": "2026-10-10"
+  },
+  {
+    "id": "isaac-sim-isaaclab-arena",
+    "key": "isaac-sim/IsaacLab-Arena",
+    "title": "Isaac Lab Arena",
+    "description": "Composable simulation tasks and policy evaluation built around Isaac Lab.",
+    "descriptionTh": "ระบบประกอบงานจำลองและประเมิน Policy บน Isaac Lab",
+    "tags": [
+      "Isaac Lab",
+      "Policy evaluation",
+      "Benchmarks"
+    ],
+    "categories": [
+      "isaac",
+      "learning",
+      "research"
+    ],
+    "source": "upstream",
+    "owner": "isaac-sim",
+    "url": "https://github.com/isaac-sim/IsaacLab-Arena",
+    "upstream": "https://github.com/isaac-sim/IsaacLab-Arena",
+    "license": "See project notices",
+    "verifiedOn": "2026-10-10"
+  },
+  {
+    "id": "isaac-sim-isaacsim-ros_workspaces",
+    "key": "isaac-sim/IsaacSim-ros_workspaces",
+    "title": "Isaac Sim ROS Workspaces",
+    "description": "ROS workspace packages for Isaac Sim integration; check the supported ROS distribution upstream.",
+    "descriptionTh": "แพ็กเกจ ROS Workspace สำหรับเชื่อม Isaac Sim ตรวจรุ่น ROS ที่รองรับจากต้นฉบับ",
+    "tags": [
+      "Isaac Sim",
+      "ROS 2",
+      "Integration"
+    ],
+    "categories": [
+      "isaac",
+      "ros",
+      "simulation"
+    ],
+    "source": "upstream",
+    "owner": "isaac-sim",
+    "url": "https://github.com/isaac-sim/IsaacSim-ros_workspaces",
+    "upstream": "https://github.com/isaac-sim/IsaacSim-ros_workspaces",
+    "license": "Apache-2.0",
+    "verifiedOn": "2026-10-10"
+  },
+  {
+    "id": "isaac-sim-isaacautomator",
+    "key": "isaac-sim/IsaacAutomator",
+    "title": "Isaac Automator",
+    "description": "Infrastructure tooling for Isaac cloud workstations; review provider setup and costs before deployment.",
+    "descriptionTh": "เครื่องมือเตรียม Isaac Workstation บนคลาวด์ ควรตรวจผู้ให้บริการและค่าใช้จ่ายก่อน Deploy",
+    "tags": [
+      "Isaac Sim",
+      "Cloud",
+      "Infrastructure"
+    ],
+    "categories": [
+      "isaac"
+    ],
+    "source": "upstream",
+    "owner": "isaac-sim",
+    "url": "https://github.com/isaac-sim/IsaacAutomator",
+    "upstream": "https://github.com/isaac-sim/IsaacAutomator",
+    "license": "Apache-2.0",
+    "verifiedOn": "2026-10-10"
+  }
+]
